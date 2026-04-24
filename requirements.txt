@@ -1,0 +1,6 @@
+streamlit
+google-generativeai
+google-cloud-translate
+python-dotenv
+pandas
+requests
