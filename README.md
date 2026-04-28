@@ -1,64 +1,191 @@
-# 🗳️ VoteWise: AI Election Assistant
+# 🗳️ VoteWise AI – Election Assistant
 
-**VoteWise** is a smart, context-aware AI assistant designed to simplify the election process for citizens. Built for the **PromptWars** hackathon, it leverages Google Gemini and other services to provide personalized guidance based on user demographics and location.
+**VoteWise AI** is a smart, context-aware election guidance assistant built for the **PromptWars Hackathon**.
 
-## 🚀 Problem Statement
-Navigating the complexities of voter registration, eligibility rules, and election timelines can be overwhelming, especially for first-time voters and minority groups. Misinformation or lack of clarity often leads to lower voter turnout.
-
-## 🎯 Chosen Vertical
-**Election Process Education**
-
-## ✨ Features
-- **Context-Aware Intelligence**: Tailors advice based on user age, first-time status, and location.
-- **Logical Decision Engine**:
-  - Automatically identifies underage users and provides educational paths.
-  - Generates specialized guides for first-time voters.
-  - Prioritizes urgent tasks as election day approaches.
-- **Multilingual Support**: Integration (mocked) with Google Translate for diverse language preferences.
-- **Polling Station Finder**: Quick lookup for voting centers (mocked via Maps logic).
-- **Interactive Timeline**: Real-time tracking of critical election dates.
-- **Simplified Mode**: Break down complex legal jargon into easy-to-understand steps.
-
-## 🛠️ Google Services Used
-1.  **Gemini API**: Powers the core conversational intelligence and logical reasoning.
-2.  **Google Translate (Mocked)**: Provides architectural layout for multilingual support.
-3.  **Google Maps (Mocked)**: Logic structure for location-based polling station retrieval.
-
-## 💻 How to Run Locally
-
-1.  **Clone the repository**:
-    ```bash
-    git clone [repository-url]
-    cd PromptWars-ElectionHelper
-    ```
-
-2.  **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Set up Environment Variables**:
-    Create a `.env` file in the root directory and add your Gemini API Key:
-    ```env
-    GOOGLE_API_KEY=your_gemini_api_key_here
-    ```
-
-4.  **Run the application**:
-    ```bash
-    streamlit run app.py
-    ```
-
-## 📝 Example Prompts
-- "I'm 17, how can I prepare for the next election?"
-- "What documents do I need to register in California?"
-- "Is it too late to request a mail-in ballot?"
-- "Explain the voting process like I'm 5."
-
-## 🔮 Future Improvements
-- **Live Google Maps Integration**: Real-time polling station navigation.
-- **Verified Voter APIs**: Integration with official state registration databases.
-- **Push Notifications**: SMS/Email alerts for upcoming deadlines.
-- **Voice Support**: Hands-free interaction for accessibility.
+It helps citizens understand voter registration, eligibility, election deadlines, polling logistics, and first-time voting through a clean interactive experience powered by intelligent decision logic.
 
 ---
-Built with ❤️ for **PromptWars Hackathon**.
+
+# 🚀 Challenge Vertical
+
+**Election Process Education**
+
+---
+
+# 🎯 Problem Statement
+
+Many citizens face confusion around:
+
+* How to register to vote
+* Whether they are eligible
+* Important deadlines
+* What documents are required
+* Where to vote
+* How the process works for first-time voters
+
+This confusion can reduce participation and create avoidable barriers.
+
+---
+
+# 💡 Solution
+
+VoteWise AI simplifies the election process through a personalized assistant that adapts responses based on user context.
+
+The system uses:
+
+* Age
+* First-time voter status
+* State / location
+* Urgency level
+* Language preference
+
+This creates practical, user-specific guidance instead of generic answers.
+
+---
+
+# ✨ Key Features
+
+## Smart Election Assistant
+
+Interactive chatbot for election-related questions.
+
+## Eligibility Guidance
+
+Age-aware support for voting readiness.
+
+## Registration Help
+
+Step-by-step voter registration instructions.
+
+## First-Time Voter Mode
+
+Beginner-friendly election walkthrough.
+
+## Polling Guidance
+
+Polling location and voting-day preparation support.
+
+## Deadline Awareness
+
+Election timelines and action reminders.
+
+## Multilingual Ready
+
+Expandable translation support for broader accessibility.
+
+## Smart Offline Mode
+
+Reliable fallback guidance when live AI services are unavailable.
+
+---
+
+# 🧠 Google Services Integration
+
+## Gemini API
+
+Used for conversational intelligence and natural-language responses.
+
+## Google Ecosystem Ready Architecture
+
+Designed for future expansion with:
+
+* Google Translate
+* Google Maps / Places
+* Google Cloud services
+
+## Reliability Layer
+
+Fallback civic guidance engine ensures uninterrupted usability.
+
+---
+
+# 🏗️ Project Architecture
+
+```text
+assets/
+data/
+modules/
+app.py
+logic.py
+README.md
+requirements.txt
+```
+
+## Modular Design
+
+* `app.py` → Streamlit frontend
+* `logic.py` → compatibility layer
+* `modules/engine.py` → decision engine
+* `modules/election_data.py` → data access
+* `modules/prompts.py` → prompt logic
+
+---
+
+# ⚙️ How It Works
+
+1. User enters profile context
+2. User asks election-related question
+3. Decision engine checks intent + context
+4. Personalized answer is generated
+5. Offline fallback activates if needed
+
+---
+
+# 🛡️ Security & Responsible Design
+
+* Non-partisan informational guidance only
+* No candidate persuasion
+* Minimal data handling
+* Safe educational assistant behavior
+
+---
+
+# ♿ Accessibility
+
+* Clear readable UI
+* Beginner-friendly responses
+* Guided workflows
+* Expandable multilingual support
+
+---
+
+# 💻 Run Locally
+
+```bash
+git clone <repository-url>
+cd PromptWars-ElectionHelper
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Create `.env`
+
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+---
+
+# 📝 Example Prompts
+
+* I just turned 18. What should I do first?
+* How do I register to vote in California?
+* Where is my polling station?
+* What documents do I need to vote?
+* I’m a first-time voter. Help me prepare.
+
+---
+
+# 🔮 Future Improvements
+
+* Real-time polling APIs
+* Verified registration systems
+* Deadline notifications
+* Voice assistant support
+* Expanded multilingual translation
+
+---
+
+# ❤️ Built for PromptWars Hackathon
+
+VoteWise AI aims to make the election process more understandable, accessible, and practical for every citizen.
