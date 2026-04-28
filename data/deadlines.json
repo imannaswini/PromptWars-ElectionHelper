@@ -1,0 +1,22 @@
+{
+  "New York": {
+    "registration_deadline": "October 10, 2026",
+    "election_day": "November 3, 2026"
+  },
+  "California": {
+    "registration_deadline": "October 19, 2026",
+    "election_day": "November 3, 2026"
+  },
+  "Texas": {
+    "registration_deadline": "October 5, 2026",
+    "election_day": "November 3, 2026"
+  },
+  "Florida": {
+    "registration_deadline": "October 5, 2026",
+    "election_day": "November 3, 2026"
+  },
+  "Other": {
+    "registration_deadline": "Check local authority",
+    "election_day": "Check local authority"
+  }
+}

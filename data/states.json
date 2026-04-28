@@ -1,0 +1,27 @@
+{
+  "New York": {
+    "registration": "https://vote.ny.gov/",
+    "id_required": "Photo ID recommended",
+    "poll_hours": "6 AM - 9 PM"
+  },
+  "California": {
+    "registration": "https://registertovote.ca.gov/",
+    "id_required": "ID may be requested for first-time voters",
+    "poll_hours": "7 AM - 8 PM"
+  },
+  "Texas": {
+    "registration": "https://www.votetexas.gov/",
+    "id_required": "Photo ID required",
+    "poll_hours": "7 AM - 7 PM"
+  },
+  "Florida": {
+    "registration": "https://registertovoteflorida.gov/",
+    "id_required": "Photo ID required",
+    "poll_hours": "7 AM - 7 PM"
+  },
+  "Other": {
+    "registration": "Check your local election authority website",
+    "id_required": "Varies by region",
+    "poll_hours": "Check local rules"
+  }
+}
